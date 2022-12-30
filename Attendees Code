@@ -1,0 +1,39 @@
+# This is the code for storing attendees info
+
+# Main Function
+
+firstTimerRec = dict()
+
+
+def firstTimerRecCreator(name, address, postcode, telephone, email, date, gender, invitedby, membership):
+    tempList = [address, postcode, telephone, email, date, gender, invitedby, membership]
+    firstTimerRec[name] = tempList
+   
+   
+   
+   
+ # Function
+
+
+name = input('name: ')
+address = input('address: ')
+postcode = input('postcode: ')
+telephone = input('telephone: ')
+email = input('email: ')
+date = input('date: ')
+gender = input('gender: ')
+invitedby = input('invitedby: ')
+membership = input('membership: ')
+
+
+firstTimerRecCreator(name, address, postcode, telephone, email, date, gender, invitedby, membership)
+
+
+if str(telephone):
+    telephone = int(telephone)
+else:
+    print('please input only numbers')
+
+
+
+print(firstTimerRec)
